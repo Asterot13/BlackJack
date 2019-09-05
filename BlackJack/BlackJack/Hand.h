@@ -5,7 +5,7 @@
 
 class Hand
 {
-private:
+protected:
 	std::vector<Card*> m_Cards;
 
 public:
@@ -14,5 +14,5 @@ public:
 
 	void Add(Card* pCard);
 	void Clear();
-	int GetTotal();
+	int GetTotal() const;
 };

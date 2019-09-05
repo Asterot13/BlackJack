@@ -4,8 +4,8 @@
 class House : public GenericPlayer
 {
 public:
-	House();
-	~House();
+	House(const std::string& name = "House");
+	virtual ~House();
 
 	virtual bool IsHitting() const;
 	void FlipFirstCard();

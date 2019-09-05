@@ -2,11 +2,11 @@
 #include "Hand.h"
 #include "GenericPlayer.h"
 
-class Deck
+class Deck : public Hand
 {
 public:
 	Deck();
-	~Deck();
+	virtual ~Deck();
 
 	void Populate();
 	void Shuffle();

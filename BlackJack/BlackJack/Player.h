@@ -4,8 +4,8 @@
 class Player : public GenericPlayer
 {
 public:
-	Player();
-	~Player();
+	Player(const std::string& name = "");
+	virtual ~Player();
 
 	virtual bool IsHitting() const;
 	void Win() const;
